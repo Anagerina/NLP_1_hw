@@ -8,15 +8,18 @@
 Максимум, что удалось получить не используя трансформер - это `93.06%` на тесте в notebook_2 (действия описаны внизу Readme)
 ---
 Каждый ноутбук со своим порядковым номером использует файлы .py из папки src c тем же порядковым номером.
+
 `notebook_0` -> `src_0`
+
 `notebook_1` -> `src_1`  
+
 `notebook_2` -> `src_2`  
 
 В папках `src` Находится 4 файла:
-* model
-* data
-* FastText
-* lightning_module
+* model.py
+* data.py
+* FastText.py
+* lightning_module.py
   
 ---
 
