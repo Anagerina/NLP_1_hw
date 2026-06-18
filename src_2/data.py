@@ -26,7 +26,11 @@ def get_data():
     test_labels = dataset["test"]["label"]
 
     train_texts, val_texts, train_labels, val_labels = train_test_split(
-        train_texts, train_labels, test_size=0.1, random_state=42, stratify=train_labels
+        train_texts,
+        train_labels,
+        test_size=0.05,
+        random_state=42,
+        stratify=train_labels,
     )
 
     print(f"\nAfter split:")
