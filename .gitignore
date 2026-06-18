@@ -1,0 +1,12 @@
+ag_news_cache
+*.pyc
+*.arrow
+__pycache__
+*.wordvectors
+*.wordvectors.vectors.npy
+*.vscode
+lightning_logs
+bilstm_word2vec.ipynb
+README-checkpoint.md
+*.yaml
+logs/
