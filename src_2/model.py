@@ -40,19 +40,16 @@ class CNNBiLSTM(nn.Module):
         )
         self.attention = Attention(hidden_dim * 2)
 
-        # (TextCNN)
+        # TextCNN
         self.conv3 = nn.Conv1d(
             in_channels=embed_dim, out_channels=128, kernel_size=3, padding=1
         )
-        self.bn3 = nn.BatchNorm1d(128)
         self.conv4 = nn.Conv1d(
             in_channels=embed_dim, out_channels=128, kernel_size=4, padding=2
         )
-        self.bn3 = nn.BatchNorm1d(128)
         self.conv5 = nn.Conv1d(
             in_channels=embed_dim, out_channels=128, kernel_size=5, padding=2
         )
-        self.bn3 = nn.BatchNorm1d(128)
 
         combined_dim = (hidden_dim * 2) + (128 * 3)
 
